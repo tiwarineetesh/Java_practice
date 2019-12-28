@@ -66,7 +66,6 @@ public class HashMapEx {
 			for (Map.Entry<String, String> entry : map3.entrySet()) {
 				System.out.println("[Key] : " + entry.getKey() + " [Value] : " + entry.getValue());
 			}
-	       
 			
 	       System.out.println("KeySet Example");
 
@@ -84,5 +83,5 @@ public class HashMapEx {
 	       }
 	       
 	   }
-	   
-} 
+
+}
