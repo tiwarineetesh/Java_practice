@@ -29,15 +29,18 @@ public class EmployeeDetails {
 //		map2.put(employee2, employee2.salary);
 				
         List<Employee> employees = new ArrayList<>();
-        employees.add(new Employee("Emp Name 1", "Emp Design 1", 20000));
-        employees.add(new Employee("Emp Name 2", "Emp Design 2", 15000));
-        employees.add(new Employee("Emp Name 3", "Emp Design 3", 12000));
-        employees.add(new Employee("Emp Name 4", "Emp Design 4", 18000));
+        employees.add(new Employee(1001 ,"Emp Name 1", "Emp Design 1", 20000));
+        employees.add(new Employee(1002, "Emp Name 2", "Emp Design 2", 15000));
+        employees.add(new Employee(1003, "Emp Name 3", "Emp Design 3", 12000));
+        employees.add(new Employee(1004, "Emp Name 4", "Emp Design 4", 18000));
 
         Collections.sort(employees, new Comparator<Employee>() {
 
             @Override
             public int compare(Employee employee1, Employee employee2) {
+            	
+//            	 return employee1.getSalary() - employee2.getSalary();
+            	
                 if( employee1.getSalary() > employee2.getSalary()) {
                 	
                 	return 1;

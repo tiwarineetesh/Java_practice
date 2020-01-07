@@ -24,27 +24,23 @@ public class HashMapEx {
 	       map.put("d", new Integer(400));
 	  
 	       // Returns Set view      
-	       Set<Map.Entry< String,Integer> > st = map.entrySet();    
-	  
-	       for (Map.Entry< String,Integer> me:st) 
-	       { 
+	       Set<Map.Entry<String, Integer>> st = map.entrySet();
+	       for (Map.Entry<String, Integer> me:st) 
+	       {
 	           System.out.print(me.getKey()+":"); 
-	           System.out.println(me.getValue()); 
+	           System.out.println(me.getValue());
 	       }
 	       
 	       
 	       Map map2 = new HashMap();
-	       //Adding elements to map
 	       map2.put(1,"Neetesh");
 	       map2.put(5,"Manish");
 	       map2.put(2,"Aamir");
 	       map2.put(6,"Jitendra");
 	       
-	       //Traversing Map  
 	       Set set = map2.entrySet();  
 	       Iterator itr = set.iterator();  
 	       while(itr.hasNext()){  
-	           //Converting to Map.Entry so that we can get key and value separately  
 	           Map.Entry entry=(Map.Entry)itr.next();  
 	           System.out.println(entry.getKey()+" "+entry.getValue());  
 	       }  
@@ -53,7 +49,6 @@ public class HashMapEx {
 	       System.out.println("Map2 after clear : "+map2);
 	       
 	       Map<String, String> map3 = new HashMap<>();
-	       //Adding elements to map
 	       map3.put("Maruti", "Ciaz");
 	       map3.put("Tata", "Nexa");
 	       map3.put("Hyundai", "Creta");
@@ -69,7 +64,6 @@ public class HashMapEx {
 			
 	       System.out.println("KeySet Example");
 
-	       //Traversing Map  
 	       Set set3 = map3.keySet();
 	       System.out.println("Map3 values are : "+map3);
 	       System.out.println("Map3 key values are : "+set3);
